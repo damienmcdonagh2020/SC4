@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="style1.css"></link>
+    <title>Profile</title>
+  </head>
+  <style>
+  .input-mysize{width: 500px;}
+  input{width:300px}
+  </style>
+  <body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"> <img src = "musicnote.png" width= "20px" height = "20px">Profile</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+			  <!-- A link to the home page -->
+				<a class="nav-link" href="page1Loggedin.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <!-- Drop down to navigate through the vinyl category-->
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Shop by Category
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="pop.html">Pop</a>
+				  <a class="dropdown-item" href="throwbacks.html">Throw Backs</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to bestsellers -->
+				<a class="nav-link" href="bestsellerLogged.html">Best-Seller</a>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to contact us -->
+				<a class="nav-link " href="contactusLogged.html">Contact us</a>
+			  </li>
+			</ul>
+			<!-- A link from an image of basket that goes to the cart -->
+			<a href="basket.html"><img src="cart.png" class="pad" width="50px" height="50px" style="margin-right:15px;"></a>
+			<form class="navbar-form">
+				<div class="form-group" style="display:inline;">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<a href="#" class="btn btn-outline-dark my-2 my-sm-0">
+					  <span class="fa fa-search"></span> <b>Search<b> 
+					</a> 
+				</div>
+				</div>
+			</form>
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Amy
+				</a>
+				<!-- Dropdown to edit profile details and log out -->
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="Profile.html">Edit Details</a>
+				  <a class="dropdown-item" href="page1.html">Log out</a>
+				</div>
+			  </div>
+			
+		  </div>
+		</nav>
+		
+		<!--A container for better formatting & Styling -->	
+		
+		<div class="container">
+		<h1>Edit Profile</h1>
+		<hr>
+		<div class="row">
+	
+        <h3>Personal info</h3>
+		<!-- form to edit various information of the profile -->
+        
+        <form class="form-horizontal " role="form">
+          <div class="form-group ">
+            <label class="col-lg-3 control-label">First name:</label>
+            <div class="col-lg-8">
+              <input id="first"class="form-control d-block w-100" type="text" value="Amy">
+            </div>
+          </div>
+          <div class="form-group ">
+            <label class="col-lg-3 control-label">Last name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Waldron">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Tel:</label>
+            <div class="col-lg-8">
+              <input id="tel" class="form-control" type="text" value="0862303712">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input id="mail"class="form-control" type="text" value="AmyWaldron@gmail.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Username:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="Amy">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+			<!-- Button to save profile changes and cancel -->
+              <input onclick="save()"type="button" class="btn btn-primary" value="Save Changes">
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel">
+            </div>
+          </div>
+        </form>
+		
+		</div>
+	</div>
+<hr>
+</body>
+</html>
+<script>
+	<!-- Giving values to various pieces of information -->
+	function save()
+		{
+			let tel = {Tel: document.getElementById("tel").value};
+			localStorage.setItem('tel', JSON.stringify(tel));
+			
+			let first = {First: document.getElementById("first").value};
+			localStorage.setItem('first', JSON.stringify(first));
+			
+			let mail = {Email: document.getElementById("mail").value};
+			 localStorage.setItem('mail', JSON.stringify(mail));
+			 
+    	
+		}
+
+</script>

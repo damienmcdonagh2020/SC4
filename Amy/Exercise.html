@@ -1,0 +1,357 @@
+    <!--Damien McDonagh g00386999 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:700|Source+Sans+Pro" rel="stylesheet">
+
+    <title></title>
+  </head>
+	  <style>
+			/* code for background image */
+		body
+			{
+				background-image: url("background.jpg");
+			}
+			<!-- Middle box background color -->
+			.row
+			{
+				background-color: silver;
+			}
+			<!-- Customize Header -->
+			.Header
+			{
+				font-family: 'Merriweather', serif;
+				font-size: 60px;
+				color: #BD523F; 
+				padding-top: 75px;
+				padding-left:55px;
+			}
+			<!-- sizing card size -->
+			.card-deck
+			{
+				width:750px;
+			}
+			<!-- customize card -->
+			.card-body
+			{
+				height: 140px;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 20px;
+			}
+	  </style>
+  <body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="page1.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Choose a Recepie Option 
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="vegan.html">Vegan Recipies</a>
+				  <a class="dropdown-item" href="diet.html">Diet Recipies</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Exercise.html">Exercise</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link " href="contactus.html">Contact us</a>
+			  </li>
+			</ul>
+			
+			<form class="navbar-form">
+				<div class="form-group" style="display:inline;">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<a href="#" class="btn btn-outline-dark my-2 my-sm-0">
+					  <span class="fa fa-search"></span> <b>Search<b> 
+					</a> 
+				</div>
+				</div>
+			</form>
+			<button class="btn btn-outline-dark my-2 my-sm-0"><a href="login.html">Login</a></button>
+			<button class="btn btn-outline-dark my-2 my-sm-0"><a href="Signup.html">Signup</a></button>
+			<a href="basket.html"><img src="cart.png" class="pad" width="40px" height="40px"></a>
+		  </div>
+		</nav>
+		
+		<!--Bootstrap grid -->
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12 banner" >
+					<!-- Header -->
+					<div class = "Header">Exercise</div><br><br>
+				</div>
+				
+				<div class="col-md-12">
+					<!-- Card -->
+				<center>
+					<div class="card-deck"> 
+								<!-- Exercise 1 -->
+								<div class="card">
+									<!-- image of the Exercise -->
+									<!-- Button trigger modal -->
+									<img class="card-img-top" src="bestsellers/lunges.jfif" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl1">
+									
+									<!-- Modal -->
+									<div class="modal fade" id="vinyl1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Lunges</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">&times;</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											 
+											Stand with your feet hip-width apart.
+											Step forward and bend both knees, 
+											lowering until your knees are bent at a 90-degree angle.
+											Shift forward onto the lead leg.
+											Push off on both legs and step through, 
+											lifting your back leg and bringing it forward so your rear foot lands ahead of you in a lunge position.
+										
+											 <br>
+										  </div>
+										  <!-- button for close-->
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+									<!-- Details about the Exercise-->
+									<div class="card-body">
+										<p class="card-text"><br>Lunges<br></p>
+									  
+									</div>
+								</div>
+								<!-- Exercise 2 -->
+								<div class="card">
+									<!-- imgage of the vinyl -->
+									<!-- Button trigger modal -->
+									<img class="card-img-top" src="exercises/pushup.jfif" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl2">
+									
+									<!-- Modal -->
+									<div class="modal fade" id="vinyl2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Push ups </h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">&times;</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											
+												STEPS:
+												Get down on all fours, placing your hands slightly wider than your shoulders.
+												Straighten your arms and legs.
+												Lower your body until your chest nearly touches the floor.
+												Pause, then push yourself back up.
+												Repeat.
+											 <br>
+									
+										  </div>
+
+										  <!-- button for close -->
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+									<!-- Details about the Exercise-->
+									<div class="card-body">
+										<p class="card-text"> <br>Push-Up</p>
+									</div>							
+								</div>
+								<!-- Exercise 3 -->
+								<div class="card">
+									<!-- imgage of the Exercise -->
+									<!-- Button trigger modal -->
+									<img class="card-img-top" src="exercises/squats.jfif" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl3">
+
+									<!-- Modal -->
+									<div class="modal fade" id="vinyl3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">REPUTATION</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">&times;</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											STEPS:
+											Stand with your hands on the back of your head and your feet shoulder-width apart with your feet turned out slightly to open the hip joint.
+											Lower your body until your thighs are parallel to the floor.
+											Pause, then return to the starting position.
+											Repeat.
+										  <br>
+										
+										  </div>
+										  <!-- button for close -->
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+									<!-- Details about the Exercise-->
+									<div class="card-body">
+										<p class="card-text"><br>Squats</p>
+									</div>	
+								</div>	
+										
+								<!-- Exercise 4 -->
+								<div class="card">
+									<!-- imgage of the Exercise -->
+									<!-- Button trigger modal -->
+									<img class="card-img-top" src="exercises/overhead.jfif" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl4">
+
+									<!-- Modal -->
+									<div class="modal fade" id="vinyl4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">dumbbell presses</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">&times;</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											Stand upright and keep the back straight. Hold a dumbbell in each hand, at the shoulders, with an overhand grip.
+											...
+											Thumbs are on the inside and knuckles face up.
+											Exhale as you raise the weights above the head in a controlled motion.
+											Pause briefly at the top of the motion.
+											Inhale and return the dumbbells to the shoulders.
+											  <br>
+										  </div>
+										  <!-- button for close -->
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+									<!-- Details about the Exercise-->
+									<div class="card-body">
+										<p class="card-text"><br>dumbbell presses<br></p>
+									</div>	
+								</div>
+							</div>
+							
+							<br><br>
+							
+							<div class="card-deck"> 
+									
+								<!-- Exercise 5 -->
+								<div class="card">
+									<!-- imgage of the Exercise -->
+									<!-- Button trigger modal -->
+									<img class="card-img-top" src="exercises/dbRow.jfif" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl5">
+
+									<!-- Modal -->
+									<div class="modal fade" id="vinyl5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Dumbbell Row</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">&times;</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											Starting Position: Holding a dumbbell in your right hand, bend over to place your left knee and left hand on a bench to support your body weight. ...
+											Upward Movement: Exhale and slowly pull the dumbbell upwards, bending your elbow and pulling your upper arm backwards.
+											<br>
+										  </div>
+										  <!-- button for close -->
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+									<!-- Details about the Exercise-->
+									<div class="card-body">
+										<p class="card-text">Dumbell Row<br><br></p>
+									</div>							
+								</div>
+								<!-- Exercise 6 -->
+								<div class="card">
+									<!-- imgage of the Exercise -->
+									<!-- Button trigger modal -->
+									<img class="card-img-top" src="exercises/singledl.jfif" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl">
+
+									<!-- Modal -->
+									<div class="modal fade" id="vinyl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Single deadlift</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">&times;</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+					
+											A Single Leg Deadlift is a hip-hinge movement that strengthens the back, core and legs. This variation of a traditional deadlift involves one leg lifting off the ground and extending out behind you. The more complex movement works even more core muscles as well as the standing leg, which help to improve balance.<br>
+											
+										  </div>
+										  <!-- button for close -->
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+									<!-- Details about the Exercise-->
+									<div class="card-body">
+										<p class="card-text">Single DeadLift<br><br></p>
+									</div>	
+								</div>
+				
+							<br><br>
+							
+							
+							</div>
+							<br><br>
+						</center>	
+						</div>
+					</div>
+				</div>
+
+				
+				
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		  </body>
+		</html>

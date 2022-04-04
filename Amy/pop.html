@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Pop</title>
+  </head>
+  <style>
+	body{
+		background-image: url("background.jpg");
+		}
+  </style>
+  <body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"> <img src = "musicnote.png" width= "20px" height = "20px">Pop</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<!-- A link to the home page -->
+				<a class="nav-link" href="page1.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <!-- Drop down to navigate through the vinyl category-->
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Shop by Category
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="pop.html">Pop</a>
+				  <a class="dropdown-item" href="throwbacks.html">Throw Backs</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to bestsellers -->
+				<a class="nav-link" href="bestseller.html">Best-Seller</a>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to contact us -->
+				<a class="nav-link " href="contactus.html">Contact us</a>
+			  </li>
+			</ul>
+			
+			<form class="navbar-form">
+				<div class="form-group" style="display:inline;">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<a href="#" class="btn btn-outline-dark my-2 my-sm-0">
+					  <span class="fa fa-search"></span> <b>Search<b> 
+					</a> 
+				</div>
+				</div>
+			</form>
+			<!--Login & signup Button -->
+			<button class="btn btn-outline-dark my-2 my-sm-0"><a href="login.html">Login</a></button>
+			<button class="btn btn-outline-dark my-2 my-sm-0"><a href="Signup.html">Signup</a></button>
+			<!-- A link from an image of basket that goes to the cart -->
+			<a href="basket.html"><img src="cart.png" class="pad" width="40px" height="40px"></a>
+		  </div>
+		</nav>
+		
+		<!--A container for better formatting & Styling -->	
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<h2>Driver's Licence</h2>
+					<p>Olivia Rodrigo</p>
+					<img src="pop/driver.png" data-toggle="modal" data-target="#myModal1" width="220px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal1">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Driver's Licence by Oliva Rodrigo</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>Drivers License" is the debut single by American singer Olivia Rodrigo. It was released on January 8, 2021 by Universal and Geffen Records, as the lead single from her upcoming debut studio album, Sour. Rodrigo and Dan Nigro wrote the song, with production from the latter. Containing poignant lyrics detailing heartache, "Drivers License" is an atmospheric power ballad built around bedroom pop, power pop and indie pop. It is characterized by a minimalist production incorporating kick drums, harmonies, syncopated hand-claps, and a dreamy bridge.</p>
+								</div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €25.95</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart1();" id = "quantity1"> Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<h2>Payphone</h2>
+					<p>Maroon 5</p>
+					<img src="pop/payphone.jpg" data-toggle="modal" data-target="#myModal2" width="220px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal2">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Payphone by Maroon 5</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>Payphone is a musical recording by Maroon 5 featuring Wiz Khalifa.</p>
+								</div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €20.15</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart2();" id = "quantity2">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<h2>Little Lion Man</h2>
+					<p>Mumford & Sons</p>
+					<img src="pop/littlelionman.jpg" data-toggle="modal" data-target="#myModal3" width="250px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+						View Vinyl Details
+					</button>
+			
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal3">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Little Lion Man By Mumford & Sons</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"Little Lion Man" is the debut single by English folk rock band Mumford & Sons. It was released as the lead single from their debut studio album, Sigh No More, on 11 August 2009 in the United Kingdom. The song had a positive commercial performance, charting in several countries and peaking within the top twenty in Australia, Belgium (Flanders), Ireland, and New Zealand.</p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €22.99</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart3();" id = "quantity3">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</div>
+		
+			<br><br>
+		
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<h2>Giants</h2>
+					<p>Dermott Kennedy</p>
+					<img src="pop/giants.jpg" data-toggle="modal" data-target="#myModal4" width="230px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal4">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Giants by Dermot Kennedy</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"Giants" is a song by Irish singer-songwriter and musician Dermot Kennedy. It was released as a digital download on 24 June 2020 by Riggins, Interscope and Island. The song peaked at number one on the Irish Singles Chart. The song was written by Stephen Kozmeniuk, Scott Harris and Dermot Kennedy.</p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €24.00</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart4();" id = "quantity4">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>						
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<h2>Ophelia</h2>
+					<p>The Lumineers</p>
+					<img src="pop/ophelia.jpg" data-toggle="modal" data-target="#myModal5" width="230px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal5">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Ophelia by The Lumineers</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>Ophelia" is a song recorded by American folk rock band The Lumineers. It was released as the lead single from their sophomore album, Cleopatra on February 5, 2016. As of March 2020, the song has garnered over 389 million streams on Spotify.</p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €20.50</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart5();" id = "quantity5">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<h2>Afterglow</h2>
+					<p>Ed Sheeran</p>
+					<img src="pop/afterglow.jpg" data-toggle="modal" data-target="#myModal6" width="220px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal6">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Afterglow by Ed Sheeran</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"Afterglow" is a song by English singer Ed Sheeran. Released on 21 December 2020, the song marks Sheeran's first single release in more than 18 months. An accompanying music video features a one-take performance by Sheeran with solo acoustic guitar accompaniment.</p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €28.99</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart6();" id = "quantity6">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+			</div>
+			
+			<br><br>
+			
+		</div>
+		
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<script>
+	<!-- function to alert the user when a vinyl has been added to the cart -->
+	function cartAlert() {
+			alert("The Vinyl has been added to your cart!");
+		}
+
+	<!-- functions to add each vinyl to the cart with a value -->
+	function addCart1(){
+			localStorage.itemQuantity1 = (document.getElementById("quantity1").value)*25.95;
+		}
+		function addCart2(){
+			localStorage.itemQuantity2 = (document.getElementById("quantity2").value)*20.15;
+		}
+		function addCart3(){
+			localStorage.itemQuantity3 = (document.getElementById("quantity3").value)*22.99;
+		}
+		function addCart4(){
+			localStorage.itemQuantity4 = (document.getElementById("quantity4").value)*24.00;
+		}
+		function addCart5(){
+			localStorage.itemQuantity5 = (document.getElementById("quantity5").value)*20.50;
+		}
+		function addCart6(){
+			localStorage.itemQuantity6 = (document.getElementById("quantity6").value)*28.99;
+		}
+</script>

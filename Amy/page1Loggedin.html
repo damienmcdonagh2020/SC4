@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style1.css"></link>
+    <title>Library</title>
+  </head>
+  <style>
+  .input-mysize{width: 500px;}
+  </style>
+  <body>
+		<!--Navigation Bar template taken from getsbootstrap -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"> <img src = "musicnote.png" width= "20px" height = "20px">Music</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<!-- A link to the home page -->
+				<a class="nav-link" href="page1Loggedin.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <!-- Drop down to navigate through the vinyl category-->
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Shop by Category
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="popLogged.html">Pop</a>
+				  <a class="dropdown-item" href="throwbacksLogged.html">Throw Backs</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to bestsellers -->
+				<a class="nav-link" href="bestsellerLogged.html">Best-Seller</a>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to contact us -->
+				<a class="nav-link " href="contactusLogged.html">Contact us</a>
+			  </li>
+			</ul>
+			<!-- A link from an image of basket that goes to the cart -->
+			<a href="basket.html"><img src="cart.png" class="pad" width="50px" height="50px" style="margin-right:15px;"></a>
+			<form class="navbar-form">
+				<div class="form-group" style="display:inline;">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<a href="#" class="btn btn-outline-dark my-2 my-sm-0">
+					  <span class="fa fa-search"></span> <b>Search<b> 
+					</a> 
+				</div>
+				</div>
+			</form>
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Amy
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<!-- Dropdown to edit profile details and log out -->
+				  <a class="dropdown-item" href="Profile.html">Edit Details</a>
+				  <a class="dropdown-item" href="page1.html">Log out</a>
+				</div>
+			  </div>
+			
+		  </div>
+		</nav>
+		
+		<!--A container for better formatting & Styling -->	
+		
+	<div class = "container">
+		
+		<h2 style="padding-left:40px;"><b>The Hottest Hits Right Now<b></h2>
+		<center>
+		<div class = "row">
+		<!-- Image trigger modal REPEATED FOR EVERY VINYL-->
+			<img src="page1music/FineLine.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl"></img>
+			<figcaption><br> Fine Line <br> Harry Styles <br>&euro;21.29</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title">Fine Line</h5>
+				  </div>
+				  <div id="price"class="modal-body">
+					&euro;21.29
+				  </div>
+				  <div class="modal-footer">
+				  <!--Button to add a vinyl to basket & close the modal REPEATED FOR EVERY VINYL -->
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="addToCart()" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class ="row">
+			<img src="page1music/AmericanTeen.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl2"></img>
+			<figcaption><br> American Teen <br> Khalid<br>&euro;27.68</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl2" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title2"> American Teen</h5>
+				  </div>
+				  <div class="modal-body">
+					&euro;27.68
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class ="row">
+			<img src="page1music/SgtPepper.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl3"></img>
+			<figcaption><br>Sgt Pepper's Lonely Hearts Club Band<br> The Beatles<br>&euro;30.95</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl3" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title2">Sgt Pepper's Lonely Hearts Club Band</h5>
+				  </div>
+				  <div class="modal-body">
+					&euro;30.95
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class ="row">
+			<img src="page1music/Nevermind.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl4"></img>
+			<figcaption><br>Narvina Nevermind<br>Nirvana<br>&euro;23.95</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl4" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title2">Nervina Nevermind</h5>
+				  </div>
+				  <div class="modal-body">
+					&euro;23.95
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class ="row">
+			<img src="page1music/abbey.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl5"></img>
+			<figcaption><br>Abbey Road<br>The Beatles<br>&euro;25.95</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl5" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title2"> Abbey Road</h5>
+				  </div>
+				  <div class="modal-body">
+					&euro;25.95
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class ="row">
+			<img src="page1music/pianoman.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl6"></img>
+			<figcaption><br>Piano Man <br>Billy Joel<br>&euro;23.95</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl6" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title2">Piano Man</h5>
+				  </div>
+				  <div class="modal-body">
+					&euro;23.95
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class ="row">
+			<img src="page1music/onlybythenight.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl7"></img>
+			<figcaption><br> Only by the night <br>Kings of leon <br>&euro;50.00</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl7" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title2">Only by the night</h5>
+				  </div>
+				  <div class="modal-body">
+					&euro;50.00
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class ="row">
+			<img src="page1music/hunkydorky.png" width= "230px" height="225px" data-toggle="modal" data-target="#vinyl8"></img>
+			<figcaption><br>Hunky Dory<br>David Bowie<br>&euro;20.95</figcaption>
+			<!-- Modal -->
+			<div class="modal fade" id="vinyl8" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="title2">Hunky Dory</h5>
+				  </div>
+				  <div class="modal-body">
+					&euro;20.95
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Add to basket</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+	</div>
+	</center>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script>
+	
+	
+</script>

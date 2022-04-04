@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+
+	<div class="login-page">
+	  <div class="form">
+		<form class="register-form">
+		  <input type="text" placeholder="name" value="Aaron123"/>
+		  <input type="password" placeholder="password" value="Aaron12345"/>
+		  <input type="text" placeholder="email address" value="Aaron12345"/>
+		  <button>create</button>
+		  <p class="message">Already registered? <a href="#">Sign In</a></p>
+		</form>
+		<form class="login-form">
+		  <input type="text" id="username"placeholder="username"/>
+		  <input type="password" id="password"placeholder="password"/>
+			<button onclick="myFunction()">login</button></a>
+		  <p class="message">Not registered? <a href="Signup.html">Create an account</a></p>
+		</form>
+	  </div>
+	</div>
+</body>
+<script>
+	<!-- Function to detect login information and login confirmation -->
+	function myFunction()
+	{
+		if((document.getElementById("username").value != localStorage.user)&&(document.getElementById("password").value != localStorage.pass))
+		{
+			alert("Your Username or password is not correct please try again")
+		}
+		else
+		{
+			window.location.href = "page1Loggedin.html";
+		}
+	}
+	
+	$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");});
+	
+	
+</script>
